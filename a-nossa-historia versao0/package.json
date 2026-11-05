@@ -1,0 +1,17 @@
+{
+  "name": "a-nossa-historia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Nossa História — Alberto & Bernardete",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "pg": "^8.13.1",
+    "socket.io": "^4.8.1"
+  }
+}

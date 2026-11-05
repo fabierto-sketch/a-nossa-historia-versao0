@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#170d16"><meta name="description" content="A Nossa História — Alberto & Bernardete">
+<title>A Nossa História ❤️ Alberto & Bernardete</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+<header class="topbar"><a class="brand" href="/"><span class="brand-mark">♡</span><span>A NOSSA <b>HISTÓRIA</b></span></a><div class="top-actions"><span class="live-dot"></span><span>Um mundo só nosso</span><button class="icon-btn" id="soundToggle" title="Som">♫</button></div></header>
+<main id="app">
+<section class="hero" id="landing">
+<div class="hero-copy">
+<div class="eyebrow"><span></span> UMA EXPERIÊNCIA PARA DOIS <span></span></div>
+<h1>A nossa<br><em>história.</em></h1>
+<p class="hero-sub">Dois países. Duas vidas. Um sentimento.</p>
+<div class="names-line"><span>ALBERTO</span><i>♥</i><span>BERNARDETE</span></div>
+<p class="hero-note">Há histórias que merecem ser vividas.<br>Outras merecem também ser guardadas.</p>
+<div class="hero-actions"><button class="btn btn-gold" id="openStart">Entrar na nossa história <span>↗</span></button><button class="btn btn-ghost" id="openLetter">Uma carta para ti</button></div>
+</div>
+<div class="hero-art">
+<div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="city-card porto"><span>PORTUGAL</span><b>Porto</b><small>41°09′ N · 8°37′ W</small></div>
+<div class="heart-core"><span>♥</span><small>SEMPRE</small></div><div class="city-card rio"><span>BRASIL</span><b>Rio de Janeiro</b><small>22°54′ S · 43°12′ W</small></div>
+<div class="spark spark-a">✦</div><div class="spark spark-b">✧</div><div class="spark spark-c">✦</div>
+</div>
+<div class="scroll-cue">DESLIZA PARA DESCOBRIR <span>↓</span></div>
+</section>
+<section class="intro-strip"><div class="intro-quote">"A distância mede quilómetros.<br><em>A cumplicidade não se mede.</em>"</div><div class="intro-meta"><span>PORTO 🇵🇹</span><span class="line"></span><span>RIO DE JANEIRO 🇧🇷</span></div></section>
+<section class="gate-section" id="gate">
+<div class="section-kicker">O NOSSO LUGAR</div><h2>Esta história é<br><em>escrita a dois.</em></h2>
+<p class="muted center">Cria uma sala privada e convida a tua pessoa especial. O vosso livro espera por vocês.</p>
+<div class="gate-grid">
+<article class="gate-card featured"><div class="gate-icon">✧</div><h3>Começar uma nova viagem</h3><p>Cria o vosso espaço privado e recebe um código de convite.</p><label>O teu nome</label><input id="createName" value="Alberto" maxlength="32"><button class="btn btn-gold full" id="createRoom">Criar a nossa sala <span>→</span></button></article>
+<article class="gate-card"><div class="gate-icon">♡</div><h3>Já tenho um convite</h3><p>Entra na sala que foi criada para vocês.</p><label>O teu nome</label><input id="joinName" value="Bernardete" maxlength="32"><label>Código da sala</label><input id="roomCode" placeholder="EX.: A1B2C3" maxlength="6" class="code-input"><button class="btn btn-outline full" id="joinRoom">Entrar na nossa sala <span>→</span></button></article>
+</div>
+<div class="privacy-note">⌑ <span>Espaço privado · Apenas duas pessoas · As vossas memórias ficam convosco</span></div>
+</section>
+<section class="letter-section" id="letterSection"><div class="letter-glow"></div><div class="letter-envelope"><div class="seal">♥</div><div class="letter-label">UMA CARTA PARA BERNARDETE</div><h2>Minha querida<br><em>Bernardete,</em></h2><p id="letterPreview">Quis criar este pequeno universo para nós. Para guardar o que já vivemos, sorrir com as nossas brincadeiras e imaginar tudo aquilo que ainda queremos viver.</p><div class="signature">O teu Portuga <span>♥</span></div><button class="text-button" id="readLetter">Ler a carta completa <span>↗</span></button></div></section>
+<footer><div class="footer-brand">A NOSSA HISTÓRIA <span>♥</span></div><p>Feito com carinho, para Alberto & Bernardete.</p><small>ESTAMOS JUNTOS, AMOR… SEMPRE.</small></footer>
+</main>
+<div class="modal hidden" id="modal"><div class="modal-backdrop"></div><div class="modal-panel"><button class="modal-close" id="closeModal">×</button><div id="modalContent"></div></div></div>
+<div class="toast" id="toast"></div>
+<script src="/socket.io/socket.io.js"></script><script src="/app.js"></script>
+</body></html>
